@@ -107,8 +107,10 @@ Rules for the tool:
 5. Stop before payment / card / passwords.
 6. Do **not** use `extract` / `answer` / IDE browser MCP to drive a shop UI.
 
-`browser navigate` opens a **managed automation window** with a full DOM (no
-Chrome extension). That is how `@eN` clicks work reliably.
+When system-browser use is enabled, `browser navigate` opens a new tab in the
+running browser. Connect the OmniScout extension to work with a tab that is
+already open. Reuse the same session and inspect it after navigation failures
+instead of starting another browser.
 
 ## 0. When to use what
 
