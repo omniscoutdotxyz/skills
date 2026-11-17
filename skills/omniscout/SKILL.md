@@ -58,6 +58,9 @@ omniscout browser check @e18                     # checkbox or switch on
 omniscout browser uncheck @e19                   # checkbox or switch off
 ```
 
+Before using `browser click` or `browser fill` to change page data, review the
+target and values, then pass `--authorized` to confirm the action.
+
 Use `browser_extract_visible` (or `omniscout browser extract-visible`) when
 you need named facts from the current page. A JSON schema can request common
 fields such as email, pricing, or headquarters, as well as values written
